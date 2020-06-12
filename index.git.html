@@ -1,0 +1,139 @@
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<!--<script>https://cdn.jsdelivr.net/gh/anijs/anijs@0.9.3/dist/anijs-min.js</script>-->
+
+<style>
+
+h1 { font-family: cursive; font-size: 40px; font-style: normal; font-variant: normal; font-weight: bold; line-height: 94px; }
+body{
+background-color: black;
+vertical-align: middle;
+margin: 20px;
+}
+
+h1{ font-size: 5em ;} 
+.typewriter h1 {
+position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+  overflow: hidden;
+  border-right: solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  color:#FFFFFF;
+  animation: 
+    typing 5.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+@keyframes typing {
+  from { width: 0 ;}
+  to { width: 72%;}
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #FF5722; }
+}
+
+/* button*/
+
+.bouncy{
+ animation:bouncy 5s infinite linear;
+ position:relative;
+}
+@keyframes bouncy {
+ 0%{top:0em}
+ 40%{top:0em}
+ 43%{top:-0.9em}
+ 46%{top:0em}
+ 48%{top:-0.4em}
+ 50%{top:0em}
+ 100%{top:0em;}
+}
+.box {
+  position:relative;
+  vertical-align: middle;
+  color: #0b7;
+  display: inline-block;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  transition: 0.5s;
+  padding: 0 20px;
+  cursor: pointer;
+  border: 2px solid #0b7;
+  -webkit-transition:0.5s;
+}
+
+.box:hover {
+  border: 2px solid rgba(0,160,80,0);
+  color: #FFF;
+}
+
+.box::before, .box::after {
+  width: 100%;
+  height:100%;
+  z-index: 3;
+  content:'';
+  position: absolute;
+  top:0;
+  left:0;
+  box-sizing: border-box;
+  -webkit-transform: scale(0);
+  transition: 0.5s;
+}
+
+.bar::before {
+  border-bottom: 3px solid #FFF;
+  border-left: 3px solid #FFF;
+  -webkit-transform-origin: 100% 0%;
+}
+
+.bar::after {
+  border-top: 3px solid #FFF;
+  border-right: 3px solid #FFF;
+  -webkit-transform-origin: 0% 100%;
+}
+/*
+.curmudgeon::before {
+  border-bottom: 3px solid #FFF;
+  border-left: 0;
+  -webkit-transform-origin: 0% 100%;
+}
+
+.curmudgeon::after {
+  border-top: 0;
+  border-right: 0;
+  -webkit-transform-origin: 50% 50%;
+}
+*/
+.box:hover::after, .box:hover::before {
+  -webkit-transform: scale(1);
+}
+
+
+/*base code*/ .animated { -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both; } .animated.infinite { -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; } .animated.hinge { -webkit-animation-duration: 2s; animation-duration: 2s; } /*the animation definition*/ @-webkit-keyframes bounceInDown { 0%, 100%, 60%, 75%, 90% { -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1); transition-timing-function: cubic-bezier(0.215, .61, .355, 1) } 0% { opacity: 0; -webkit-transform: translate3d(0, -3000px, 0); transform: translate3d(0, -3000px, 0) } 60% { opacity: 1; -webkit-transform: translate3d(0, 25px, 0); transform: translate3d(0, 25px, 0) } 75% { -webkit-transform: translate3d(0, -10px, 0); transform: translate3d(0, -10px, 0) } 90% { -webkit-transform: translate3d(0, 5px, 0); transform: translate3d(0, 5px, 0) } 100% { -webkit-transform: none; transform: none } } @keyframes bounceInDown { 0%, 100%, 60%, 75%, 90% { -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1); transition-timing-function: cubic-bezier(0.215, .61, .355, 1) } 0% { opacity: 0; -webkit-transform: translate3d(0, -3000px, 0); -ms-transform: translate3d(0, -3000px, 0); transform: translate3d(0, -3000px, 0) } 60% { opacity: 1; -webkit-transform: translate3d(0, 25px, 0); -ms-transform: translate3d(0, 25px, 0); transform: translate3d(0, 25px, 0) } 75% { -webkit-transform: translate3d(0, -10px, 0); -ms-transform: translate3d(0, -10px, 0); transform: translate3d(0, -10px, 0) } 90% { -webkit-transform: translate3d(0, 5px, 0); -ms-transform: translate3d(0, 5px, 0); transform: translate3d(0, 5px, 0) } 100% { -webkit-transform: none; -ms-transform: none; transform: none } } .bounceInDown { -webkit-animation-name: bounceInDown; animation-name: bounceInDown }
+</style>
+
+</head>
+<body>
+<center>
+<div class="">
+<a href='math-tools' target='_BLANK'>
+  <div class='box bar bounceInDown animated'>
+    Math Tools
+  </div>
+</a>
+</div>
+</center>
+<div class="typewriter">
+
+<h1 class="full center" style="text-align:center;" >I'm Satyajeet </h1>
+
+</div>
+
+
+</body>
+</html>
